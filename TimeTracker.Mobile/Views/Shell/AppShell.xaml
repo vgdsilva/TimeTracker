@@ -3,12 +3,17 @@
 	x:Class="TimeTracker.Mobile.AppShell"
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:recordingHours="clr-namespace:TimeTracker.Mobile.Views.Pages.RecordingHours"
+    xmlns:settings="clr-namespace:TimeTracker.Mobile.Views.Pages.Settings"
 	xmlns:local="clr-namespace:TimeTracker.Mobile">
 
-	<!--<TabBar>
-		<ShellContent
-			Title="Main"
-			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:MainPage}" />
-	</TabBar>-->
+    <TabBar>
+        <ShellContent Title="Registro de Horas" 
+                      Icon="iconblank.png" 
+                      ContentTemplate="{DataTemplate recordingHours:RecordingHourPage}" />
+        
+        <ShellContent Title="Configurações" 
+                      Icon="iconblank.png" 
+                      ContentTemplate="{DataTemplate settings:SettingPage}" />
+    </TabBar>
 </Shell>

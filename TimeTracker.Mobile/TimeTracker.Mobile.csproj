@@ -60,7 +60,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\Pages\" />
+	  <MauiXaml Update="Views\Pages\RecordingHours\RecordingHourPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\Settings\SettingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<PropertyGroup Label="MauiAppAccelerator">
